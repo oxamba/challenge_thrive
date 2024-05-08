@@ -16,7 +16,7 @@ class User:
     @classmethod
     def validate_number(cls, value):
         if type(value) != int and type(value) != float:
-            raise TypeError("Data supposed to be in int format")
+            raise TypeError("Data supposed to be in int/float format")
 
     def get_company_id(self):
         return self.company_id
