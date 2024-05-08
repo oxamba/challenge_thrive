@@ -21,7 +21,9 @@
 
 ### How to install python using brew (for MacOS)
 **Step 1**: Install Homebrew (If Not Installed)
+
 • Open the Terminal.
+
 • Install Homebrew, a package manager, by executing the following command:
 ```
 /bin/bash -c "$(curl -fsSL
@@ -30,22 +32,28 @@ https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
 **Step 2**: Install Python 3.12
+
 • In the Terminal, run the command brew install python@3.12 to install Python 3.12:
 ```
 brew install python@3.12
 ```
 
 **Step 3**: Verify Python Installation
+
 • To ensure Python 3.12 is installed correctly, run the following command in the Terminal:
 ```
 python3.12 –version
 ```
 
 **Step 4**: Set Up Virtual Environments (Optional but Recommended)
+
 • Utilize virtual environments for project isolation.
+
 • Create a virtual environment with the command python3.12 -m venv myenv, replacing
 myenv with your chosen environment name.
+
 • Activate the virtual environment by running source myenv/bin/activate.
+
 • To deactivate it later, simply execute deactivate.
 
 ### How to run script:
@@ -53,7 +61,7 @@ Pull the thrive_challenge from the github and run open terminal in the thrive_ch
 ```
 python challenge.py
 ```
-In few seconds you could see output.txt file in the folder
+In few seconds you should see output.txt file in the folder
 
 
 ### How to run tests
