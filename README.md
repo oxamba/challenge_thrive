@@ -71,4 +71,12 @@ To run the unit tests just place this command in terminal:
 ```
 python -m unittest tests.TestChallenge
 ```
+### Questions:
+1. How should we handle cases where a user references two different companies? Should we add tokens from both companies?
+2. Just to confirm, does the company's top-up remain consistent over time? Is it always spendable?
+3. What's the protocol if a user or company is missing certain fields? Currently, if essential fields like id, name, or email are absent, I skip them. If tokens or status fields are missing, they default to 0 or false. Should we implement error handling in such cases?
+4. How should we handle a user with a non-existent company ID? Currently, I skip such users, but is this the desired behavior?
+5. What's the procedure for handling two identical users? Should the last one overwrite the others?
+6. I assumed that emails and names were already validated when entered in the challenge. Is this assumption correct?
+7. Can tokens ever be negative, both for companies and users? If so, what's the significance of negative token values?
 
