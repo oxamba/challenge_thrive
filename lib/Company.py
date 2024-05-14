@@ -47,7 +47,7 @@ class Company:
 
         # Checks that user has all required keys, taking into account that if it lacks
         # email_status, active_status, tokens - they are set to 0/false
-        if (user_data.keys()) >= user_keys:
+        if (user_keys & set(user_data.keys())) == user_keys:
             new_user = User(user_data['id'], user_data['first_name'], user_data['last_name'],
                             user_data['email'], user_data['company_id'], user_data['email_status'],
                             user_data['active_status'], user_data['tokens'])
